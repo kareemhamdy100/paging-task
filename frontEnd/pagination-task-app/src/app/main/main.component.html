@@ -1,0 +1,11 @@
+<div >
+    <ul class="search-results" 
+    infiniteScroll
+      [infiniteScrollDistance]="2"
+      [infiniteScrollThrottle]="50"
+      (scrolled)="onScroll()"
+      [scrollWindow]="false"
+      >
+      <div *ngFor="let item of data">{{item.name}}</div>
+    </ul>
+</div>
